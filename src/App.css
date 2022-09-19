@@ -1,38 +1,420 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  font-family: poppins;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+  object-fit: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navbar Styling*/
+.navbar-nav a{
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+  margin: 10px 40px 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+a img{
+  background-color: black;
+}
+.center{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+/* p{
+  text-align: justify;
+} */
+
+/* Carousel Styling */
+.carousel-item img{
+  width: 100%;
+  height: 600px;
+ 
+}
+.carousel-caption{
+  position: absolute;
+  top: 40%;
+}
+.carousel-caption .display-2{
+  font-weight: 600;
+}
+.carousel-caption button{
+  margin: 5px 5px;
+}
+
+/* Testimonail Styling */
+.testimonials h2{
+  font-weight: bold;
+}
+/* .swiper-slider {
+  background-position: center;
+  background-size: cover;
+  background-color: blue;
+  width: 300px;
+  height: 300px;
+} */
+
+.swiper-slide{
+  background-color: aliceblue;
+}
+.swiper-pagination{
+  padding-top: 100px;
+}
+.user-testimonial{
+  font-size: large;
+  color: black;
+  font-style:italic;
+  margin-top: 20px;
+  padding: 0 100px;
+}
+.user-name{
+  margin-top: 10px;
+  font-size: x-large;
+  font-family: Poppins;
+  margin-bottom: 50px;
+}
+.user-name span{
+  color: rgb(72, 20, 20);
+  font-size: medium;
+}
+.user-photo{
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 100%;
+  padding-top: 10px;
+}
+
+/* Footer Styling */
+.Logo img{
+  background: black;
+}
+.footer-left,
+.footer-left-left,
+.footer-right-right,
+.footer-right
+{
+  padding-left: 50px;
+}
+.footer-right{
+  padding-right: 12px;
+}
+.footer-right a{
+  font-size: x-large;
+  color: black;
+}
+.footer-right a:last-child,
+.footer-right a:nth-last-child(2),
+.footer-right a:nth-last-child(3)
+{
+  margin-left: 10px;
+}
+footer .bottom-footer{
+  padding-bottom: 3px;
+}
+footer{
+  background-color: whitesmoke;
+  padding: 50px 0 0;
+}
+h5{
+  padding-bottom: 20px;
+}
+.subscribe input{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Contact Styling */
+.contact{
+  font-family: poppins;
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+.connect{
+  padding-top: 50px;
+  /* padding-left: 150px; */
+}
+.connect span{
+  font-size: large;
+  font-weight: 500;
+}
+.topic{
+  padding-bottom: 10px;
+}
+.message{
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(225, 224, 209);
+  padding: 20px 0;
+  /* margin: 0 40px; */
+  width: 550px;
+}
+.message h4{
+  padding-bottom: 20px;
+}
+.message input{
+  margin: 10px 0px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  border:1px transparent grey;
+  width: 350px;
+}
+.message textarea{
+  margin: 10px 0px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  border:1px transparent grey;
+  width: 350px;
+}
+.message button{
+  background-color: white;
+  width: 300px;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: medium;
+  margin-bottom: 20px;
+}
+.message button:hover{
+  background-color: rgb(79, 86, 86);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.text-center{
+  padding-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Services */
+.inner-services img{
+  height: 250px;
+}
+
+.tools .icons{
+  font-size: 100px;
+  padding: 0 0 15px;
+}
+.tools .icon-box{
+  border: 1px solid grey;
+  margin: 10px 10px;
+}
+
+/* About Styling */
+.about p{
+  text-align: justify;
+}
+.tab-box{
+  background-color: darkgray;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 10px 10px;
+}
+.tab-box a{
+  font-size: x-large;
+  color: black;
+}
+.tab-box a:hover{
+  color: whitesmoke;
+}
+.tab-pane p{
+  text-align: justify;
+}
+
+/* Teams */
+.team-image img{
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+.team-info{
+  margin: 20px 20px;
+  font-family: poppins;
+}
+.team-info span{
+  color: brown;
+}
+.team-box{
+  margin: 20px 0;
+  display: flex;
+}
+
+
+/* Media Query */
+@media(max-width: 1099px)
+{
+    .navbar li a{
+        margin: 10px 20px 0;
+    } 
+    .team-info{
+      margin: 0 20px;
+    }
+    
+}
+@media(max-width: 999px){
+ 
+  .footer-left{
+    width: 50%;
+    padding-left: 50px;
+    margin-bottom: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .footer-left-left{
+    width: 50%;
+    padding-left: 50px;
+    margin-bottom: 20px;
+  }
+  .footer-right-right{
+    width: 50%;
+    padding-left: 50px;
+  }
+  .footer-right{
+    width: 50%;
+    padding-left: 50px;
+  }
+  .contactform{
+    padding: 0 10px;
+  }
+  .team-info{
+    margin: 30px 20px;
+  }
+}
+
+@media(max-width: 799px)
+{
+    .navbar img{
+      height: 100px;
+      width: 100px;
+    }
+    .carousel-caption button{
+        font-size: medium ;
+    }
+    .carousel-caption .display-2{
+      font-weight: 400;
+    }
+    footer{
+      padding: 30px 20px;
+    }
+    .footer-left{
+      width: 50%;
+      padding-left: 50px;
+      margin-bottom: 20px;
+    }
+    .footer-left-left{
+      width: 50%;
+      padding-left: 50px;
+      margin-bottom: 20px;
+    }
+    .footer-right-right{
+      width: 50%;
+      padding-left: 50px;
+    }
+    .footer-right{
+      width: 50%;
+      padding-left: 50px;
+    }
+    .team-image img{
+      width: 150px;
+      height: 150px;
+      margin: 10px 0;
+    }
+    .team-info{
+      margin: 8px 20px;
+    }
+  }
+
+@media(max-width: 699px)
+{
+.carousel-caption{
+ 	top: 30%;
+}
+ .carousel-caption .display-2{
+  font-weight: 400;
+}
+
+.footer-left{
+  width: 50%;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+.footer-left-left{
+  width: 50%;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+.footer-right-right{
+  width: 50%;
+  padding-left: 50px;
+}
+.footer-right{
+  width: 50%;
+  padding-left: 50px;
+}
+.team-info{
+  margin: 10px 20px;
+}
+
+}
+
+
+@media(max-width: 599px)
+{
+.Logo img{
+  height: 80px;
+  width: 80px;
+}
+.carousel-caption{
+ 	top: 30%;
+}
+ .carousel-caption .display-2{
+  font-weight: 400;
+}
+footer{
+  padding: 30px 0;
+}
+.footer-left{
+  width: 100%;
+}
+.footer-left-left{
+  width: 100%;
+  padding-left: 50px;
+}
+.footer-right-right{
+  width: 100%;
+  padding-left: 50px;
+}
+.footer-right{
+  width: 100%;
+  padding-left: 50px;
+}
+footer p:last-child{
+  padding-bottom: 20px;
+}
+.team-image img{
+  width: 100px;
+  height: 100px;
+  margin: 20px 0;
+}
+.team-box{
+  flex: none;
+}
+.team-infom{
+  margin: 0px 10px;
+}
+}
+
+@media(max-width: 399px){
+  /* .connect{
+    width: 100%;
+    padding-left: 50px;
+  }
+  .message{
+    margin-left: 50px;
+    margin-top: 30px;
+  } */
+  .message input,
+  .message textarea,
+  .message button{
+    width: 250px;
+  }
+  .team-image img{
+    width: 100px;
+    height: 100px;
+    margin: 40px 0;
   }
 }
